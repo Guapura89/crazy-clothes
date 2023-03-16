@@ -12,14 +12,37 @@
       <h1 class="text-slate-700 font-bold text-3xl">
         Welcome to Crazy clothes!
       </h1>
-      <p>Find your style.</p>
+      <p>User list.</p>
     </div>
     <div
       id="app"
       class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-5 w-11/12 lg:w-3/4 mx-auto"
     ></div>
 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <div>
+      <label for="email">Enter an email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="example@gmail.com"
+      />
+
+      <label for="name">Enter your name</label>
+      <input type="text" id="name" name="name" placeholder="John Smith" />
+
+      <label for="password">Enter a pasword</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="*****"
+      />
+
+      <button onclick="createUser()">Add user</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./utils/main.js"></script>
   </body>
 </html>
