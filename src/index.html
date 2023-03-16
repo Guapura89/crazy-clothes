@@ -19,28 +19,47 @@
       class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-5 w-11/12 lg:w-3/4 mx-auto"
     ></div>
 
-    <div>
-      <label for="email">Enter an email</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="example@gmail.com"
-      />
+    <div class="w-full lg:w-4/5 mx-auto my-20 flex items-center justify-center">
+      <div class="flex flex-col w-11/12 lg:w-1/2">
+        <h1 class="text-3xl font-bold my-5">Add a new user</h1>
+        <label class="font-bold" for="email">Enter an email</label>
+        <input
+          class="p-3 bg-slate-300 rounded-lg outline-none mb-5"
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="example@gmail.com"
+        />
 
-      <label for="name">Enter your name</label>
-      <input type="text" id="name" name="name" placeholder="John Smith" />
+        <label class="font-bold" for="name">Enter your name</label>
+        <input
+          class="p-3 bg-slate-300 rounded-lg outline-none mb-5"
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="John Smith"
+        />
 
-      <label for="password">Enter a pasword</label>
-      <input
-        type="password"
-        id="password"
-        name="password"
-        placeholder="*****"
-      />
+        <label class="font-bold" for="password">Enter a pasword</label>
+        <input
+          class="p-3 bg-slate-300 rounded-lg outline-none mb-5"
+          type="password"
+          id="password"
+          name="password"
+          required
+          placeholder="*****"
+        />
 
-      <button onclick="createUser()">Add user</button>
-    </div>
+        <button
+          class="bg-blue-600 text-white p-3 rounded-full w-1/2 mx-auto hover:cursor-pointer hover:bg-blue-700"
+          onclick="createUser()"
+        >
+          Add user
+        </button>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./utils/main.js"></script>
