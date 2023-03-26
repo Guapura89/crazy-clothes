@@ -1,10 +1,10 @@
-const ctx = document.getElementById("myChart");
+const ctx = document.getElementById("users");
 const ctx2 = document.getElementById("categories");
 
 API_URL = "https://api.escuelajs.co/api/v1/users";
 API_CAT = "https://api.escuelajs.co/api/v1/products";
 
-// Get user
+// Get data from API
 const getData = async (url_api) => {
   try {
     const response = await axios.get(url_api);
